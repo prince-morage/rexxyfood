@@ -1,0 +1,186 @@
+[
+    {
+        "id":1,
+        "name":"TRIFFLE",
+        "price": 200,
+        "image":"Images/Triffle.jpg"
+    },
+
+    {
+        "id":2,
+        "name":"Akara crepes",
+        "price": 200,
+        "image":"Images/Akara Crepes smaller.png"
+    },
+
+    
+    {
+        "id":3,
+        "name":"pancake",
+        "price": 200,
+        "image":"Images/Akara Pancake smaller.png"
+    },
+    {
+        "id":4,
+        "name":"akara and pepper sauce",
+        "price": 200,
+        "image":"Images/Akara with pepper sauce smaller.png"
+    },
+    {
+        "id":5,
+        "name":"banana Almond butter",
+        "price": 200,
+        "image":"Images/BananaAlmond Butter Cake.png"
+    },
+    {
+        "id":6,
+        "name":"bean cake",
+        "price": 200,
+        "image":"Images/Bean Cake (Akara).png"
+    },
+    {
+        "id":7,
+        "name":"Bean Plantain Waffles",
+        "price": 200,
+        "image":"Images/BeanPlantain Waffles.png"
+    },
+    {
+        "id":8,
+        "name":"Beju",
+        "price": 200,
+        "image":"Images/Beju.jpg"
+    },
+    {
+        "id":9,
+        "name":"chin chin",
+        "price": 200,
+        "image":"Images/Chin Chin.png"
+    },
+    {
+        "id":10,
+        "name":"Chocolate-malva-pudding",
+        "price": 200,
+        "image":"Images/Chocolate-malva-pudding.jpg"
+    },
+    {
+        "id":11,
+        "name":"Coconut Cookies",
+        "price": 200,
+        "image":"Images/Coconut Cookies.png"
+    },
+    {
+        "id":12,
+        "name":"mango cream dessert",
+        "price": 200,
+        "image":"Images/Mango Cream Dessert.png"
+    },
+    {
+        "id":13,
+        "name":"Cookie Crisp",
+        "price": 200,
+        "image":"Images/Cookie Crisp.png"
+    },
+    {
+        "id":14,
+        "name":"Donkwa",
+        "price": 200,
+        "image":"Images/Donkwa.png"
+    },
+    {
+        "id":15,
+        "name":"Egusi Brittle",
+        "price": 200,
+        "image":"Images/Egusi Brittle.png"
+    },
+    {
+        "id":16,
+        "name":"Gulisua",
+        "price": 200,
+        "image":"Images/Gulisua.png"
+    },
+    {
+        "id":17,
+        "name":"hot cross burns",
+        "price": 200,
+        "image":"Images/Hot-cross-buns.jpg"
+    },
+    {
+        "id":18,
+        "name":"masa",
+        "price": 200,
+        "image":"Images/Masa.png"
+    },
+    {
+        "id":19,
+        "name":"Nakia (Rice Cake)",
+        "price": 200,
+        "image":"Images/Nakia (Rice Cake).png"
+    },
+    {
+        "id":20,
+        "name":"Peanut Butter Cookies",
+        "price": 200,
+        "image":"Images/Peanut Butter Cookies.png"
+    },
+    {
+        "id":21,
+        "name":"Plantain Chips",
+        "price": 200,
+        "image":"Images/Plantain Chips.png"
+    },
+    {
+        "id":22,
+        "name":"Plantain Chocolate Fudge Cake",
+        "price": 200,
+        "image":"Images/Plantain Chocolate Fudge Cake.png"
+    },
+    {
+        "id":23,
+        "name":"Plantain Pancake",
+        "price": 200,
+        "image":"Images/Plantain Pancake Recipe.png"
+    },
+    {
+        "id":24,
+        "name":"Puff-Puff",
+        "price": 200,
+        "image":"Images/Puff-Puff.jpg"
+    },
+    {
+        "id":25,
+        "name":"Rouge Dessert",
+        "price": 200,
+        "image":"Images/Rouge Dessert.png"
+    },
+    {
+        "id":26,
+        "name":"Scented Poached Paw-paw",
+        "price": 200,
+        "image":"Images/Scented-Poached-Paw-paw.jpg"
+    },
+    {
+        "id":27,
+        "name":"Semolina Puff",
+        "price": 200,
+        "image":"Images/Semolina Puff.png"
+    },
+    {
+        "id":28,
+        "name":"ShukuShuku",
+        "price": 200,
+        "image":"Images/ShukuShuku.png"
+    },
+    {
+        "id":29,
+        "name":"Small Chops",
+        "price": 200,
+        "image":"Images/Small Chops.png"
+    },
+    {
+        "id":30,
+        "name":"Tuwon Madara",
+        "price": 200,
+        "image":"Images/Tuwon Madara.png"
+    }
+
+]

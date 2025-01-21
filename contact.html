@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food.com</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="contact.html">CONTACT</a>
+            <!-- <a href="#">INFO</a> -->
+        </nav>
+     </header>
+
+
+
+    <div class="container">
+        <div class="about-us">Contact Us</div>
+        <div class="fills">
+            <form id="contact-form">
+                <input type="text" class="name" name="user_name" placeholder="Your Name" required />
+                <input type="email" class="email" name="user_email" placeholder="Your Email" required />
+                <input type="text" name="number" placeholder="Phone Number" class="number" required />
+                <textarea name="message" class="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your User ID
+        emailjs.init("cMrMKOdmtkE6OU_JW"); // Replace with your EmailJS user ID
+
+        // Form submission event listener
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            // alert('processing')
+            // Send email using EmailJS
+            emailjs.sendForm('service_8ylhnui', 'template_gvai9bd', this)
+                .then(function(response) {
+                    alert('Email sent successfully!');
+                    console.log('SUCCESS!', response.status, response.text);
+                })
+                .catch(function(error) {
+                    console.error('FAILED...', error);
+                    alert(`Failed to send email. Error: ${error.text}`);
+                });
+        });
+
+        
+    </script>
+
+</body>
+</html>
