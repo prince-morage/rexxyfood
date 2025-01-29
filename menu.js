@@ -68,6 +68,21 @@ listProductHtml.addEventListener('click', (event) => {
        }
     
      addCartToHtml();
+     addCartToMemory();
+    }
+    const addCartToMemory = () => {
+        localStorage.setItem('cart', JSON.stringify(carts));
+    }
+
+    function checkout(){
+       
+
+        if(carts.length <= 0){
+            alert("YOU ARE A FOOL CAN'T YOU SEE THAT YOUR CART IS EMPTY")
+        }else{
+            localStorage.setItem('cart', JSON.stringify(carts));
+            window.location.href = 'checkout.html';
+        }
     }
 
     const  addCartToHtml = () => {
@@ -78,6 +93,7 @@ listProductHtml.addEventListener('click', (event) => {
             totalQuantity = totalQuantity + cart.quantity;
             let newCart = document.createElement('div');
             newCart.classList.add('item');
+            newCart.dataset.id = cart.product_id;
             let positionproduct = listproducts.findIndex((value) => value.id == cart.product_id)
            let info = listproducts[positionproduct]
            
@@ -106,7 +122,40 @@ listProductHtml.addEventListener('click', (event) => {
        iconCartSpan.textContent = totalQuantity;
     }
 
+    listCartHtml.addEventListener('click', (event) => {
+        let positionClick = event.target;
+        if(positionClick.classList.contains('minus')  || positionClick.classList.contains('plus')){
+           let product_id = positionClick.parentElement.parentElement.dataset.id;
+           let type = 'minus';
+           if(positionClick.classList.contains('plus')){
+            type = 'plus';
+           }
+           changeQuantity(product_id, type)
+        }
+    })
 
+const changeQuantity = (product_id, type) => {
+    let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
+if(positionItemInCart >= 0){
+        switch (type) {
+            case 'plus':
+                carts[positionItemInCart].quantity = carts[positionItemInCart].quantity + 1;
+                break;
+        
+            default:
+                let valueChange = carts[positionItemInCart].quantity - 1;
+                if (valueChange > 0){
+                    carts[positionItemInCart].quantity = valueChange;
+                }else{
+                    carts.splice(positionItemInCart, 1)
+                }
+
+                break;
+        }
+    }
+    addCartToMemory();
+    addCartToHtml();
+}
 const initApp = () => {
 //  get data from jsoon
 fetch('product.json')
@@ -114,6 +163,12 @@ fetch('product.json')
 .then(data => {
     listproducts = data;
     addDataToHtml()
+
+
+    if(localStorage.getItem('cart')){
+        carts = JSON.parse(localStorage.getItem('cart'));
+        addCartToHtml();
+    }
 })
 }
 initApp();

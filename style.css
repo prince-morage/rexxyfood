@@ -101,9 +101,11 @@ position: relative;
     background-color: #eee;
     letter-spacing: 3px;
     font-weight: 500;
+    width: 100%;
+    height: 100%;
 }
 
-.carousel .list .items .content button:nth-child(2){
+.carousel .list .items .content .buttons .btn2 button{
     background-color: transparent;
     border: 1px solid #eeee;
     color: #eeee;

@@ -214,12 +214,26 @@ body.showCart .carttab{
     grid-template-columns: repeat(2, 1fr);
 }
 
+.carttab .btn a{
+    display: block;
+}
 
-.carttab .btn button{
+.carttab .btn  button{
     background-color: #f1683a;
     border: none;
     font-weight: 500;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.carttab .btn a{
+    background-color: #f1683a;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
 }
 
 .carttab .btn .close{
