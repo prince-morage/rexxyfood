@@ -67,15 +67,15 @@ header .icon-cart{
 }
 
 
-header .icon-cart span{
-    display: block;
+header .icon-cart div{
+    display: flex;
     width: 30px;
     height: 30px;
     background-color: red;
     justify-content: center;
     align-items: center;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 100%;
     position: absolute;
     top: 50%;
     right: -20px;
@@ -125,7 +125,7 @@ header .icon-cart span{
 .listproduct .item{
     background-color: #353432;
     border: 1px solid #f1683a;
-    padding: 20px;
+    padding:10px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -176,7 +176,9 @@ header .icon-cart span{
 .listproduct .item button{
     background-color: #f1683a;
     color: #eee;
-    padding: 5px 10px;
+    padding: 5px ;
+    width: 100%;
+    height: 20px;
     border-radius: 20px;
     margin-top:10px ;
     border: none;
@@ -384,3 +386,51 @@ body.showCart .carttab{
 .footer-socials img:hover {
 transform: scale(1.1);
 }
+
+@media screen and (max-width:1000px){
+.listproduct{
+    grid-template-columns: repeat( 4, 1fr);
+    
+
+}
+header nav{
+    display: none;
+}
+
+.hero .hero-text{
+    font-size: 18px;
+}
+
+.carttab{
+    width: 100%
+}
+
+.carttab .listcart{
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+.carttab .listcart .item {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+       /* grid-template-columns: 50px 150px 40px 1fr; */
+
+}
+
+.carttab .listcart .item .name{
+    width: 100px;
+}
+}
+
+@media screen and (max-width:700px){
+    .listproduct{
+        grid-template-columns: repeat( 2, 1fr);
+        gap: 10px;
+    }
+
+    .listproduct .item{
+        animation: none;
+        margin-bottom: 10px;
+    }
+    }

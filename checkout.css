@@ -126,3 +126,9 @@ body.showCart .carttab{
 /* .listcart ::-webkit-scrollbar{
     width: 0;
 } */
+
+@media screen and (max-width:1000px){
+    .carttab{
+        width: 90%;
+    }
+}

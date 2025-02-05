@@ -3,7 +3,7 @@ let close = document.querySelector(".close");
 let body = document.querySelector('body');
 let listProductHtml = document.querySelector('.listproduct');
 let listCartHtml = document.querySelector('.listcart');
-let iconCartSpan = document.querySelector('.icon-cart span')
+let iconCartSpan = document.querySelector('.icon-cart div')
 
 
 let listproducts = [];

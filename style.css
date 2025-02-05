@@ -17,7 +17,7 @@ body{
 
 header{
     width: 1140px;
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
     height: 50px;
     display: flex;
@@ -34,6 +34,7 @@ header a{
     width: 100px;
 
 }
+
 header a{
     margin-right: 48px;
 
@@ -86,6 +87,10 @@ position: relative;
 
 .carousel .list .items .content .topic{
     color: #f1683a;
+}
+
+.carousel .list .items .content .des{
+    font-size: 18px;
 }
 
 .carousel .list .items .content .buttons{
@@ -372,6 +377,16 @@ position: relative;
     /* gap: 50px; */
 }
 
+.sec2 .cards2{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* gap: 50px; */
+    width: 100%;
+    animation: fadeOut 10s linear 1 forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+    /* gap: 50px; */
+}
 .sec2 img{
     width: 50%;
     /* height: 80vh; */
@@ -414,7 +429,7 @@ color:  #f1683a;
 
 .sec2-text p{
     font-size: 25px;
-    width: 600px;
+    /* width: 600px; */
 }
 
 
@@ -453,7 +468,7 @@ color:  #f1683a;
   }
   
   .footer-column h4 {
-    font-size: 1.2em;
+    font-size: 1.8em;
     font-weight: 500;
     margin-bottom: 15px;
   }
@@ -524,4 +539,92 @@ color:  #f1683a;
 
 .footer-socials img:hover {
 transform: scale(1.1);
+}
+
+@media screen and (max-width:1000px){
+    .sec2 .cards{
+        flex-direction: column;
+        animation: none;
+
+    } 
+
+    .sec2 img{
+        width: 100%;
+    }
+    .sec2 .cards2{
+flex-direction: column-reverse;
+animation: none;
+
+    }
+
+    .sec2-header{
+      font-size: 20px;
+      text-shadow: #f1683a;
+    }
+
+    .sec2-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec2-text p{
+        font-size: 20px;
+    }
+
+    .sec2 h1{
+        font-size: 20px;
+    }
+    .carousel .list .items .content .author{
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: 10px;
+        width: 2000px;
+    }
+
+    .carousel .list .items .content .title, .carousel .list .items .content .topic{
+        font-weight: bold;
+        font-size: 2em;
+        list-style: 1.3em;
+    }
+
+    .carousel .list .items .content{
+        top: 25%;
+        left: 3;
+    }
+   
+    .carousel .list .items .content .des{
+        font-size: 12px;
+    }
+    
+    .carousel .list .items .content .buttons .btn2 button{
+        display: none;
+        
+    }
+
+    .carousel .list .items .content button{
+        font-weight: 500;
+        width: 100px;
+        height: 30px;
+    }
+
+    .carousel .list .items .content .des{
+        width: 280px;
+    }
+    
+
+    .carousel .list .items .content .topic{
+        color: #f1683a;
+    }
+     header nav{
+        display: none;
+     }
+
+     .time{
+        height: 2px;
+     }
+
+     .thumbnail .item{
+        width: 100px;
+        height: 150px;
+     }
 }
